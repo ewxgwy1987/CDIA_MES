@@ -126,6 +126,8 @@ namespace PGL.MESGUI
                     startup = true;
                     logger.Info("[DEBUG] Initialize finished and GUI start preparing.");
 
+                    //Color back = Color.FromKnownColor(KnownColor.Control);
+
                     init.AppInit.OnConnected += new EventHandler<BHS.MES.MessageEventArgs>(Initializer_OnConnected);
                     init.AppInit.OnDisconnected += new EventHandler<BHS.MES.MessageEventArgs>(Initializer_OnDisconnected);
                     init.AppInit.OnReceived += new EventHandler<BHS.MES.MessageEventArgs>(Initializer_OnDataReceived);
